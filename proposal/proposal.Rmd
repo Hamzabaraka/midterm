@@ -1,7 +1,7 @@
 ---
-title: "Title"
+title: "Duke Forest House Price Prediction"
 author: 
-  - Last Name, First Name[^1]
+  - A.A.Barakat, Hamza Aslan[^1]
 bibliography: ../bibliography/biblio.bib
 csl: ../csl/apa.csl
 header-includes:
@@ -32,7 +32,7 @@ knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FAL
 <!-- ======================================================================= -->
 <!-- ============================== FOOTNOTES ============================== -->
 <!-- ======================================================================= -->
-[^1]: Student ID, [Github Repo](https://github.com/YOUR_USER_NAME_HERE/YOUR_REPO_NAME_HERE)
+[^1]: 21080637, [Github Repo](https://github.com/Hamzabaraka/21080637)
 
 # Important Information About Midterm
 
