@@ -1,0 +1,67 @@
+---
+title: "Title"
+author: 
+  - Last Name, First Name[^1]
+bibliography: ../bibliography/biblio.bib
+csl: ../csl/apa.csl
+header-includes:
+  - \usepackage{polyglossia}
+  - \setmainlanguage{english}
+  - \usepackage{booktabs}
+  - \usepackage{caption} 
+  - \captionsetup[table]{skip=10pt}
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    fig_height: 3
+    fig_width: 4
+    keep_tex: no
+    latex_engine: xelatex
+    number_sections: yes
+    toc: no
+geometry: margin=1in
+link-citations: yes
+urlcolor: blue
+fontsize: 12pt
+biblio-style: apalike
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+<!-- ======================================================================= -->
+<!-- ============================== FOOTNOTES ============================== -->
+<!-- ======================================================================= -->
+[^1]: Student ID, [Github Repo](https://github.com/YOUR_USER_NAME_HERE/YOUR_REPO_NAME_HERE)
+
+# Important Information About Midterm
+
+\colorbox{BurntOrange}{WRITE YOUR GITHUB REPO LINK ON LINE 35 IN THIS FILE!}
+
+**Project Proposal submisson will be done by uploading a zip file to the ekampus system along with the Github repo link. If you do not upload a zip file to the system and do not provide a Github repo link, you will be deemed not to have entered the midterm and final exams.**
+
+**You must upload your project folder (`YourStudentID.zip` file) to *ekampus.ankara.edu.tr* until 16 April 2023, 23:59.**
+
+\colorbox{WildStrawberry}{Read the README.md file in the project folder for more information.}
+
+# Introduction
+This outline has been created to assist you in writing your project assignment. You should cite all the sources you use, articles, presentations, projects, etc. Quoting and referencing gives readers the opportunity to access the resources you refer. **Even though you use your own words, if you are conveying the ideas of others in your work, you have to document the source of these ideas. Otherwise, you are committing academic plagiarism.** For example, you can refer to @aydinonat:2007 for academic writing rules. You can find lots of online resources on this topic.
+
+The sections in your project assignment must necessarily include the sections in this text (except the first section, of course). Apart from the sections used here, you can use different subsections. When writing your project, use this file as a draft and adapt its content to your purposes.
+
+In this section, mention the purpose and importance of your work in a few paragraphs.
+
+## Literature Review
+
+In this section, discuss the articles you have read on the subject by giving references. This is a narrative citation @chang:2013. This one is a parenthetical citation [@chang:2013]. **Do not summarize each article individually under a separate title.** In the literature review section, **at least four** articles must be cited [@newbold:2003; @verzani:2014; @wickham:2014; @wooldridge:2015a].
+
+
+
+**References section is created automatically by Rmarkdown. There is no need to change the references section in the draft file.**
+
+**_You shouldn't delete the last 3 lines. Those lines are required for References section._**
+
+\newpage
+# References {#references}
+<div id="refs"></div>
+
