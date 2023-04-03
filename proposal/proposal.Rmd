@@ -50,7 +50,7 @@ Given the significance of the housing market in the global economy, there has be
 Chen et al. @yang:2018 build an array of machine learning models to predict the price of a product given its image. Additionally, this work visualizes the features that result in higher or lower price predictions. For price regression, they use linear regression on histogram of oriented gradients, convolutional neural network (CNN) features. Nissan et al. Mysore et al. @kumar:2021 prediction compare different algorithms, such as linear regression, support vector regressor, XGBoost regressor, CatBoost regressor, and others to predict the house prices. CatBoost Regressor and SVR have the highest accuracy by 90%.
 Recently, Kumar et al. @mysore:2022 prediction use the Decision Tree machine learning algorithm to predict house prices in Mumbai city, where additional features, such as air quality and crime rate are used to help in predicting the prices.
 
-### Dataset
+## Dataset
 
 We will use the "Sale prices of houses in Duke Forest" dataset which is publicly available at the OpenIntro website. This website provides free and open-source statistics and data science educational materials, including textbooks, videos, and online courses. The organization aims to make high-quality educational resources accessible to all students and promote statistical transparency. Their materials are widely used in academic courses and by self-learners. 
 
@@ -58,43 +58,43 @@ The dataset contains the data on houses that were recently sold in the Duke Fore
 
 The "Sale prices of houses in Duke Forest" dataset consists of 98 observations and 13 variables. In the following, we will describe each of the variables separately.
 
-address
+* **address**
 Address of house.
 
-price
+* **price**
 Sale price, in USD.
 
-bed
+* **bed**
 Number of bedrooms.
 
-bath
+* **bath**
 Number of bathrooms.
 
-area
+* **area**
 Area of home, in square feet.
 
-type
+* **type**
 Type of home (all are Single Family).
 
-year_built
+* **year_built**
 Year the home was built.
 
-heating
+* **heating**
 Heating sytem.
 
-cooling
+* **cooling**
 Cooling system (other or central).
 
-parking
+* **parking**
 Type of parking available and number of parking spaces.
 
-lot
+* **lot**
 Area of the entire property, in acres.
 
-hoa
+* **hoa**
 If the home belongs to an Home Owners Association, the associted fee (NA otherwise).
 
-url
+* **url**
 URL of the listing.
 
 \newpage
