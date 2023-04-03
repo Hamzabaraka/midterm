@@ -34,32 +34,68 @@ knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FAL
 <!-- ======================================================================= -->
 [^1]: 21080637, [Github Repo](https://github.com/Hamzabaraka/21080637)
 
-# Important Information About Midterm
-
-\colorbox{BurntOrange}{WRITE YOUR GITHUB REPO LINK ON LINE 35 IN THIS FILE!}
-
-**Project Proposal submisson will be done by uploading a zip file to the ekampus system along with the Github repo link. If you do not upload a zip file to the system and do not provide a Github repo link, you will be deemed not to have entered the midterm and final exams.**
-
-**You must upload your project folder (`YourStudentID.zip` file) to *ekampus.ankara.edu.tr* until 16 April 2023, 23:59.**
-
-\colorbox{WildStrawberry}{Read the README.md file in the project folder for more information.}
 
 # Introduction
-This outline has been created to assist you in writing your project assignment. You should cite all the sources you use, articles, presentations, projects, etc. Quoting and referencing gives readers the opportunity to access the resources you refer. **Even though you use your own words, if you are conveying the ideas of others in your work, you have to document the source of these ideas. Otherwise, you are committing academic plagiarism.** For example, you can refer to @aydinonat:2007 for academic writing rules. You can find lots of online resources on this topic.
 
-The sections in your project assignment must necessarily include the sections in this text (except the first section, of course). Apart from the sections used here, you can use different subsections. When writing your project, use this file as a draft and adapt its content to your purposes.
+When individuals are in the market for a new home, they typically seek out properties that are reasonably priced and possess the desired features they are looking for. A variety of factors contribute to a property's value, including its location, number of bedrooms, appearance, and size. While professional appraisers have traditionally been responsible for predicting property values, their opinions may be influenced by the interests of the lender, mortgage broker, buyer, or seller. As a result, an automated prediction system serves as an unbiased third-party source of information. 
 
-In this section, mention the purpose and importance of your work in a few paragraphs.
+Access to accurate property value predictions is crucial for central banks, financial supervision authorities, investors, and homeowners. A house price prediction system can aid in their decision-making process by helping them determine whether the property is worth the asking price. For those looking to sell their homes, a price prediction system can assist them in identifying which features they should add to their property to increase its value.
 
 ## Literature Review
 
-In this section, discuss the articles you have read on the subject by giving references. This is a narrative citation @chang:2013. This one is a parenthetical citation [@chang:2013]. **Do not summarize each article individually under a separate title.** In the literature review section, **at least four** articles must be cited [@newbold:2003; @verzani:2014; @wickham:2014; @wooldridge:2015a].
+Given the significance of the housing market in the global economy, there has been extensive research on the development of house price prediction models, with a particular focus on using machine learning and statistical techniques to accurately forecast housing prices.
 
+@eman:2016 propose using visual and textual features to predict the house price. Then, these extracted features are passed through a neural network model (NN). Through experiments the visual features increased the performance.  Different 11 machine learning regression models are used by Imran et al. @park:2015 using and evaluated to determine the best model for a better housing price prediction of the capital Islamabad. Nur et al. @alfiyatin:2017 modeling rely on three factors: physical conditions, concept, and location to predict the price of a house. Different tests, such as linear regression and particle swarm optimization (PSO) methods are leveraged to predict the house price.
 
+Chen et al. @yang:2018 build an array of machine learning models to predict the price of a product given its image. Additionally, this work visualizes the features that result in higher or lower price predictions. For price regression, they use linear regression on histogram of oriented gradients, convolutional neural network (CNN) features. Nissan et al. Mysore et al. @kumar:2021 prediction compare different algorithms, such as linear regression, support vector regressor, XGBoost regressor, CatBoost regressor, and others to predict the house prices. CatBoost Regressor and SVR have the highest accuracy by 90%.
+Recently, Kumar et al. @mysore:2022 prediction use the Decision Tree machine learning algorithm to predict house prices in Mumbai city, where additional features, such as air quality and crime rate are used to help in predicting the prices.
 
-**References section is created automatically by Rmarkdown. There is no need to change the references section in the draft file.**
+### Dataset
 
-**_You shouldn't delete the last 3 lines. Those lines are required for References section._**
+We will use the "Sale prices of houses in Duke Forest" dataset which is publicly available at the OpenIntro website. This website provides free and open-source statistics and data science educational materials, including textbooks, videos, and online courses. The organization aims to make high-quality educational resources accessible to all students and promote statistical transparency. Their materials are widely used in academic courses and by self-learners. 
+
+The dataset contains the data on houses that were recently sold in the Duke Forest neighborhood of Durham, NC in November 2020. It is collected from Zillow.com which is a popular online real estate marketplace that provides information on homes for sale, rent, and recently sold properties in the United States. It offers users various tools to search for and estimate the value of a home, as well as resources for home buyers and sellers. The website is widely used by those interested in buying, selling, or investing in real estate.
+
+The "Sale prices of houses in Duke Forest" dataset consists of 98 observations and 13 variables. In the following, we will describe each of the variables separately.
+
+address
+Address of house.
+
+price
+Sale price, in USD.
+
+bed
+Number of bedrooms.
+
+bath
+Number of bathrooms.
+
+area
+Area of home, in square feet.
+
+type
+Type of home (all are Single Family).
+
+year_built
+Year the home was built.
+
+heating
+Heating sytem.
+
+cooling
+Cooling system (other or central).
+
+parking
+Type of parking available and number of parking spaces.
+
+lot
+Area of the entire property, in acres.
+
+hoa
+If the home belongs to an Home Owners Association, the associted fee (NA otherwise).
+
+url
+URL of the listing.
 
 \newpage
 # References {#references}
