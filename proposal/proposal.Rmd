@@ -52,50 +52,50 @@ Recently, Kumar et al. @mysore:2022 prediction use the Decision Tree machine lea
 
 ## Dataset
 
-We will use the "Sale prices of houses in Duke Forest" dataset which is publicly available at the OpenIntro website. This website provides free and open-source statistics and data science educational materials, including textbooks, videos, and online courses. The organization aims to make high-quality educational resources accessible to all students and promote statistical transparency. Their materials are widely used in academic courses and by self-learners. 
+We will use the "Sale prices of houses in Duke Forest" dataset which is publicly available at the @openintrowebsite. This website provides free and open-source statistics and data science educational materials, including textbooks, videos, and online courses. The organization aims to make high-quality educational resources accessible to all students and promote statistical transparency. Their materials are widely used in academic courses and by self-learners. 
 
-The dataset contains the data on houses that were recently sold in the Duke Forest neighborhood of Durham, NC in November 2020. It is collected from Zillow.com which is a popular online real estate marketplace that provides information on homes for sale, rent, and recently sold properties in the United States. It offers users various tools to search for and estimate the value of a home, as well as resources for home buyers and sellers. The website is widely used by those interested in buying, selling, or investing in real estate.
+The dataset contains the data on houses that were recently sold in the Duke Forest neighborhood of Durham, NC in November 2020. It is collected from @zillowweb which is a popular online real estate marketplace that provides information on homes for sale, rent, and recently sold properties in the United States. It offers users various tools to search for and estimate the value of a home, as well as resources for home buyers and sellers. The website is widely used by those interested in buying, selling, or investing in real estate.
 
 The "Sale prices of houses in Duke Forest" dataset consists of 98 observations and 13 variables. In the following, we will describe each of the variables separately.
 
-* **address**
-Address of house.
+* **address** :
+Address of house. Contains the address of the house. It is a mixed variable that contains house number, street name, city, state, and postal code. House number is a continuous variable with a range of [1, 3009]. Street name is a categorical variable with the possible values of [ Learned, Pinecrest,  Wrightwood, ..., Sevier]. City is a categorical variable with only one value [Durham]. State is a categorical variable with only one value [NC]. Postal is a discrete variable with only one value [27705]. 
 
-* **price**
-Sale price, in USD.
+* **price** :
+Sale price, in USD. Contains the sale price of the house. It is a continuous variable with a range of [95000, 1520000]. 
 
-* **bed**
-Number of bedrooms.
+* **bed** :
+Number of bedrooms. Contains the number of bedrooms in the house. It is a discrete variable with the values [2, 3, 4, 5, 6]. 
 
-* **bath**
-Number of bathrooms.
+* **bath** :
+Number of bathrooms. Contains the number of bathrooms in the house. Contains the number of bathrooms in the house. It is a discrete variable with the values [1, 2, 2.5, 3, 4, 5, 6]. 
 
-* **area**
-Area of home, in square feet.
+* **area** :
+Area of home, in square feet. Contains the area of the house. It is a continuous variable with the range of {1094, 6178}.
 
-* **type**
-Type of home (all are Single Family).
+* **type** :
+Type of home (all are Single Family). It is a categorical variable with only one value.
 
-* **year_built**
-Year the home was built.
+* **year_built** :
+Year the home was built. Contains the year that the property was built. It is a discrete value with the range of {1923, 2020}.
 
-* **heating**
-Heating sytem.
+* **heating** :
+Heating system. Contains the type of the heating system that the property contains. It is a categorical with the values {forced air, electric, gas, heat pump, baseboard, other}.
 
-* **cooling**
-Cooling system (other or central).
+* **cooling** :
+Cooling system (other or central). Contains the type of the cooling system that the property contains. It is a categorical value with the values {central, other}.
 
-* **parking**
-Type of parking available and number of parking spaces.
+* **parking** :
+Type of parking available and number of parking spaces. Contains the type of parking space. It is a caterogical value with the values {0 space, garage, attached, off-street, covered, carport, garage-detached, other}.
 
-* **lot**
-Area of the entire property, in acres.
+* **lot** :
+Area of the entire property, in acres. It is a continuous variable with the range of {0.15, 1,47}.
 
-* **hoa**
-If the home belongs to an Home Owners Association, the associted fee (NA otherwise).
+* **hoa** :
+If the home belongs to an Home Owners Association, the associated fee (NA otherwise).
 
-* **url**
-URL of the listing.
+* **URL** :
+URL of the listing. It is categorical value.
 
 \newpage
 # References {#references}
