@@ -43,11 +43,11 @@ Access to accurate property value predictions is crucial for central banks, fina
 
 ## Literature Review
 
-Given the significance of the housing market in the global economy, there has been extensive research on the development of house price prediction models, with a particular focus on using machine learning and statistical techniques to accurately forecast housing prices.
+Given the significance of the housing market in the global economy, there has been extensive research on the development of house price prediction models, with a particular focus on using machine learning and statistical techniques to accurately forecast house prices.
 
-@eman:2016 propose using visual and textual features to predict the house price. Then, these extracted features are passed through a neural network model. Through experiments the visual features increased the performance.  Different 11 machine learning regression models are used by @park:2015 and evaluated to determine the best model for a better housing price prediction of the capital Islamabad. @alfiyatin:2017 rely on three factors: physical conditions, concept, and location to predict the price of a house. Different tests, such as linear regression and particle swarm optimization methods are leveraged to predict the house price.
+@eman:2016 propose using visual and textual features to predict the house price. Then, these extracted features are passed through a neural network model. Through experiments the visual features increased the performance.  Different 11 machine learning regression models are used by @park:2015 and evaluated to determine the best model for a better house price prediction of the capital Islamabad. @alfiyatin:2017 rely on three factors: physical conditions, concept, and location to predict the price of a house. Linear regression and particle swarm optimization methods are leveraged to predict the house price
 
-@yang:2018 build an array of machine learning models to predict the price of a product given its image. Additionally, this work visualizes the features that result in higher or lower price predictions. For price regression, they use linear regression on histogram of oriented gradients, convolutional neural network features. @kumar:2021 compare different algorithms, such as linear regression, support vector regressor, XGBoost regressor, CatBoost regressor, and others to predict the house prices. CatBoost Regressor has the highest accuracy by 90%.
+@yang:2018 build an array of machine learning models to predict the price of a product given its image. Additionally, this work visualizes the features that result in higher or lower price predictions. For price regression, they use linear regression on histogram of oriented gradients, convolutional neural network features. @kumar:2021 compare different algorithms, such as linear regression, support vector regressor, XGBoost regressor, and CatBoost regressor to predict the house prices. CatBoost Regressor has the highest accuracy by 90%.
 Recently, @mysore:2022 use the Decision Tree machine learning algorithm to predict house prices in Mumbai city, where additional features, such as air quality and crime rate are used to help in predicting the prices.
 
 ## Dataset
@@ -58,43 +58,43 @@ The dataset contains the data on houses that were recently sold in the Duke Fore
 
 The "Sale prices of houses in Duke Forest" dataset consists of 98 observations and 13 variables. In the following, we will describe each of the variables separately.
 
-* **address** :
+* `address` :
 Address of house. Contains the address of the house. It is a mixed variable that contains house number, street name, city, state, and postal code. House number is a continuous variable with a range of [1, 3009]. Street name is a categorical variable with the possible values of [ Learned, Pinecrest,  Wrightwood, ..., Sevier]. City is a categorical variable with only one value [Durham]. State is a categorical variable with only one value [NC]. Postal is a discrete variable with only one value [27705]. 
 
-* **price** :
+* `price` :
 Sale price, in USD. Contains the sale price of the house. It is a continuous variable with a range of [95000, 1520000]. 
 
-* **bed** :
+* `bed` :
 Number of bedrooms. Contains the number of bedrooms in the house. It is a discrete variable with the values [2, 3, 4, 5, 6]. 
 
-* **bath** :
+* `bath` :
 Number of bathrooms. Contains the number of bathrooms in the house. Contains the number of bathrooms in the house. It is a discrete variable with the values [1, 2, 2.5, 3, 4, 5, 6]. 
 
-* **area** :
-Area of home, in square feet. Contains the area of the house. It is a continuous variable with the range of {1094, 6178}.
+* `area` :
+Area of home, in square feet. Contains the area of the house. It is a continuous variable with the range of [1094, 6178].
 
-* **type** :
+* `type` :
 Type of home (all are Single Family). It is a categorical variable with only one value.
 
-* **year_built** :
-Year the home was built. Contains the year that the property was built. It is a discrete value with the range of {1923, 2020}.
+* `year_built` :
+Year the home was built. Contains the year that the property was built. It is a discrete value with the range of [1923, 2020].
 
-* **heating** :
-Heating system. Contains the type of the heating system that the property contains. It is a categorical with the values {forced air, electric, gas, heat pump, baseboard, other}.
+* `heating` :
+Heating system. Contains the type of the heating system that the property contains. It is a categorical with the values [forced air, electric, gas, heat pump, baseboard, other].
 
-* **cooling** :
-Cooling system (other or central). Contains the type of the cooling system that the property contains. It is a categorical value with the values {central, other}.
+* `cooling` :
+Cooling system (other or central). Contains the type of the cooling system that the property contains. It is a categorical value with the values [central, other].
 
-* **parking** :
-Type of parking available and number of parking spaces. Contains the type of parking space. It is a caterogical value with the values {0 space, garage, attached, off-street, covered, carport, garage-detached, other}.
+* `parking` :
+Type of parking available and number of parking spaces. Contains the type of parking space. It is a caterogical value with the values [0 space, garage, attached, off-street, covered, carport, garage-detached, other].
 
-* **lot** :
-Area of the entire property, in acres. It is a continuous variable with the range of {0.15, 1,47}.
+* `lot` :
+Area of the entire property, in acres. It is a continuous variable with the range of [0.15, 1.47].
 
-* **hoa** :
+* `hoa` :
 If the home belongs to an Home Owners Association, the associated fee (NA otherwise).
 
-* **URL** :
+* `URL` :
 URL of the listing. It is categorical value.
 
 \newpage
