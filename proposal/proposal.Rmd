@@ -94,6 +94,10 @@ If the home belongs to an Home Owners Association.
 * `URL` :
 URL of the listing within the @zillow:2006
 
+### Data tidying
+
+The DF dataset is cleaned and tidied using various functions in R. The initial dataset was cleaned by removing the `type`, `hoa`, and `url` columns as they contained the same value for all the observations. The `address` column was split into separate columns (`area`, `city`, and `state`) because it contained multiple variables. The `city` and `state` columns were then removed as they contained the same value for all the observations. The `area` column was further split into separate columns (`number`, `street`, and `type`), and the `type` column was removed as it contained the same value for all the observations. The `heating` and `parking` columns were processed by creating a new column for each unique heating and parking type, respectively, with an initial value of "no". The unique list of heating and parking types was obtained, and for each observation, "yes" was put for each heating and parking type that exists in that observation. The `heating` and `parking` columns were then removed, and the column names were cleaned up by removing blanks and adding `heating_` and `parking_` prefixes to the names of the columns related to heating and parking, respectively. The rows containing missing values were dropped, and the resulting dataset was saved as a new csv file ("duke_forest_tidy.csv"). The final dataset contained information on the number of bedrooms, bathrooms, square footage, rental price, heating (gas, electric, forced air, heat pump, and other) and parking (carport, covered, garage, garage attached, garage detached, off-street, and on-street).
+
 \newpage
 # References {#references}
 <div id="refs"></div>
